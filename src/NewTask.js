@@ -5,6 +5,7 @@ export default ({createTask}) => {
 
     const handleSubmit = e => {
         e.preventDefault();
+        e.target.reset();
         createTask(description);
     }
 
