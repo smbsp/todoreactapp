@@ -1,68 +1,39 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# To Do List - React
 
-## Available Scripts
+It is a simple to do list bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+The main purpose of a to-do is to help organize tasks, so learning to effectively use them will benefit you by improving your time management abilities and decreasing your stress levels.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Clone the repository and run the following commands.
 
-### `npm test`
+```bash
+npm install
+npm run start
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Demo
+Find a small video link [here](https://drive.google.com/file/d/1ICgYdgcQeOA_Sut2FGBX5aR5PeAHzFDC/view?usp=sharing).
 
-### `npm run build`
+## Things I learnt #BUIDLing this application
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I set up my Windows machine to use Ubuntu 20.04 LTS and run bash terminal in Windows. Isn't that cool? 
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+I have tried to consolidate the step by step process to set up your development environment with reference links below. Hope that helps you get to speed. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **WSL**: Windows Subsystem for Linux is a compatibility layer for running Linux binary executables natively on Windows 10 and Windows Server 2019. Please note this is not available for earlier versions of Windows OS. You can read the official docs [here](https://docs.microsoft.com/en-us/windows/wsl/install-win10). Some important commands for WSL with description are furnished below.
 
-### `npm run eject`
+```bash
+lsb_release -a : Details of the Linux distro currently running
+ll /mnt : Find your local drives mounted under the /mnt folder. Example usage would be cd /mnt/c to access c:\
+Run Linux binaries from the Windows Command Prompt (CMD) or PowerShell using wsl <command> (or wsl.exe <command>).
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. **Installing Node.js via WSL**: Once you run linux binaries on Windows, you need to download and configure other development tools. Read on how to install Node via WSL [here](https://gist.github.com/noygal/6b7b1796a92d70e24e35f94b53722219). I faced a permission denied issue while trying to install node. You can read about the resolution [here](https://stackoverflow.com/questions/56204010/permission-denied-while-installing-node-on-wsl-using-nvm).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Installing and Configuring VS code**:  Once you download VS Code, it should automatically detect your WSL installation and suggest an extension called "Remote WSL". You can read about it [here](https://medium.com/@fiqriismail/setup-wsl-on-windows-10-for-your-javascript-development-with-visual-studio-code-f63f75841e5f). You'll find that the VS code terminal is now running bash command line.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+4. **Setting up Git and GitHub using VS code**: Finally connect your GitHub account to VS code to instantly push the changes. This [video](https://www.youtube.com/watch?v=Fk12ELJ9Bww) succinctly explains the process. If have worked in large enterprises and do not have a good knowledge of GitHub, [this article](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6) might help.
